@@ -23,29 +23,42 @@ body :link:hover {
 
 h1 {
     color: var(--text-color);
+    cursor: default;
 }
 
+/*
 .overlay {
     border-image: fill 1 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
+*/
 
 .shadow {
     /*text-shadow: 3px 3px 8px black;*/
     filter: drop-shadow(3px 3px 8px black);
 }
 
-.background {
+.main {
     height: 100dvh;
     width: 100dvw;
-    background-image: url("./images/background.mp4");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.videobackground {
+    min-height: 100dvh;
+    min-width: 100dvw;
+    position: fixed;
+    background-color: #fdf497;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 200dvh;
+    width: 200dvw;
+    position: fixed;
 }
 
 #me {
